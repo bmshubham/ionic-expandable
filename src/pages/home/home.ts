@@ -7,8 +7,25 @@ import { NavController } from 'ionic-angular';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
+  items: any = [];
+  itemExpandHeight: number = 200;
 
+  constructor(public navCtrl: NavController) {
+    this.items = [
+      {expanded: false},
+      {expanded: false},
+      {expanded: false},
+      {expanded: false},
+      {expanded: false},
+      {expanded: false},
+      {expanded: false},
+      {expanded: false},
+      {expanded: false}
+    ];
+  }
+
+  expandItem(item) {
+    item.expanded = !item.expanded;
   }
 
 }
