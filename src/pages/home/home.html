@@ -8,13 +8,25 @@
 
 <ion-content padding>
   <ion-list>
-    <button (click)="expandItem(item)" ion-item *ngFor="let item of items">
+    <button (click)="expandItem(education)" ion-item>
       <ion-thumbnail item-start>
         <img src="http://placehold.it/100">
       </ion-thumbnail>
       <h2>My Neighbor Totoro</h2>
       <p>Hayao Miyazaki • 1988</p>
-      <expandable [expandHeight]="itemExpandHeight" [expanded]="item.expanded">
+      <expandable [expandHeight]="itemExpandHeight" [expanded]="education.expanded">
+        Hello people<br>Hello people<br>Hello people<br>Hello people<br>Hello people<br>Hello people<br>Hello people<br>Hello people<br>Hello people<br>Hello people<br>
+      </expandable>
+      <button ion-button clear item-end>View</button>
+    </button>
+
+    <button (click)="expandItem(interest)" ion-item>
+      <ion-thumbnail item-start>
+        <img src="http://placehold.it/100">
+      </ion-thumbnail>
+      <h2>My Neighbor Totoro</h2>
+      <p>Hayao Miyazaki • 1988</p>
+      <expandable [expandHeight]="itemExpandHeight" [expanded]="interest.expanded">
         Hello people
       </expandable>
       <button ion-button clear item-end>View</button>
